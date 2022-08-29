@@ -1,0 +1,54 @@
+
+  
+  <div class="container">
+
+    <mat-card class="box">
+     
+       
+        <div class="sub-container">Admin</div>
+      
+      
+        <form [formGroup]="adminForm" class="c-form">
+
+            
+
+            <mat-form-field   class="c-width" hideRequiredMarker appearance="outline">
+                <mat-label >Email</mat-label>
+                <input matInput required formControlName="email">
+              </mat-form-field>
+            
+              <mat-form-field   class="c-width" hideRequiredMarker appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput required formControlName="password">
+              </mat-form-field>
+
+              <mat-form-field class="c-width" hideRequiredMarker appearance="outline">
+                <mat-label>Confirm Password</mat-label>
+                <input matInput required formControlName="cpass">
+              </mat-form-field>
+
+              
+
+                <div class="btn">
+                  <button mat-flat-button type="button" (click)="sign()">Sign</button>
+                  
+                  
+              </div>
+
+
+              
+
+              
+        </form>
+        
+     
+      
+    
+        
+</mat-card>
+
+
+
+
+  </div>
+  

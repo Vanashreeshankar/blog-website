@@ -1,0 +1,70 @@
+
+  <div class="container">
+
+    <mat-card class="box">
+     
+       
+        <div class="sub-container">SignUp</div>
+      
+      
+        <form [formGroup]="signupForm" class="c-form">
+
+            <mat-form-field   class="c-width" hideRequiredMarker appearance="outline">
+                <mat-label >Name</mat-label>
+                <input matInput required formControlName="name">
+              </mat-form-field>
+
+            <mat-form-field   class="c-width" hideRequiredMarker appearance="outline">
+                <mat-label >Email</mat-label>
+                <input matInput required formControlName="email">
+              </mat-form-field>
+            
+              <mat-form-field   class="c-width" hideRequiredMarker appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput required formControlName="password">
+              </mat-form-field>
+
+              <mat-form-field class="c-width" hideRequiredMarker appearance="outline">
+                <mat-label>Confirm Password</mat-label>
+                <input matInput required formControlName="cpass">
+              </mat-form-field>
+
+              <button mat-flat-button type="button" (click)="toggle()" >Next</button>
+
+              <div *ngIf="display">
+                
+                <p >What was your childhood nickname?</p>
+                <mat-form-field class="c-width" hideRequiredMarker appearance="fill">
+                  <mat-label>Ans</mat-label>
+                  <input matInput required formControlName="que1">
+                </mat-form-field>
+
+                <p>What was your first pet?</p>
+                <mat-form-field class="c-width" hideRequiredMarker appearance="fill">
+                  <mat-label>Ans</mat-label>
+                  <input matInput required formControlName="que2">
+                </mat-form-field>
+
+                <div >
+                  <button mat-flat-button class="btn" type="button" (click)="signup()">Register</button>
+                  
+                  <button mat-flat-button class="btn1" type="button" (click)="moveToSignIn()">LogIn</button>
+              </div>
+
+
+              </div>
+
+              
+        </form>
+        
+     
+      
+    
+        
+</mat-card>
+
+
+
+
+  </div>
+  

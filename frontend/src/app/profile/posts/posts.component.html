@@ -1,0 +1,18 @@
+<mat-card class="box">
+    <mat-card-title>{{post.title}}</mat-card-title>
+    <mat-card-content (click)="show()">{{post.description}}</mat-card-content>
+    <mat-card-footer>
+        <span class="c1"> {{post.auther}}</span> |
+        
+        <span class="c3">
+        <button mat-raised-button  routerLink="/edit/{{post._id}}" routerLinkActive="active"><mat-icon> border_color</mat-icon></button>
+        <button mat-raised-button (click)="DeletePost(post._id)"><mat-icon>delete</mat-icon></button>
+        <button mat-raised-button routerLink="/home" routerLinkActive="active" (click)="addTohome(post)"><mat-icon>description</mat-icon></button>
+    </span>
+</mat-card-footer>
+   
+    <div>
+       
+    </div>
+    
+</mat-card>

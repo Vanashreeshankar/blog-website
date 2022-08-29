@@ -1,0 +1,18 @@
+<div class="container">
+ <div class="search">
+  
+  <input type="search" placeholder=" Search by titles" [(ngModel)]="titleSearch">
+  
+ </div>
+
+    <mat-card *ngFor="let post of blogPost | search : titleSearch" class="box">
+
+      <mat-card-title>{{post.title}}</mat-card-title>
+      <mat-card-content>{{post.description}}</mat-card-content>
+      <mat-card-footer>{{post.auther}} </mat-card-footer>
+      
+    </mat-card>
+  
+
+</div>
+

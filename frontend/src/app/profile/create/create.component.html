@@ -1,0 +1,37 @@
+<div class="container">
+
+  <mat-card class="box" >
+
+    <div class="sub-container">Create</div>
+     
+      <form  [formGroup]="form" (ngSubmit)="postData()"  class="c-form">
+
+          <mat-form-field  class="c-width" hideRequiredMarker appearance="outline">
+              <mat-label >Title</mat-label>
+              <input formControlName="title" matInput required  >
+            </mat-form-field>
+
+            <mat-form-field  class="c-width" hideRequiredMarker appearance="outline">
+              <mat-label>Description</mat-label>
+              <textarea formControlName="description" matInput required  ></textarea>
+            </mat-form-field>
+
+            <mat-form-field  class="c-width" hideRequiredMarker appearance="outline">
+              <mat-label >Auther</mat-label>
+              <input formControlName="auther" matInput required  >
+            </mat-form-field>
+
+          
+            <div class="btn"  align="center">
+              <button mat-raised-button routerLink="/bio">Back</button>&nbsp;
+                    <button mat-raised-button >Draft</button>
+          </div>
+
+      </form>
+  
+</mat-card>
+  
+    
+
+
+ 

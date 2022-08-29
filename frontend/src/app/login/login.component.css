@@ -1,0 +1,56 @@
+
+.container{
+    width: 350px;
+    height: 450px;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;  
+    margin-top: 100px;
+    
+}
+.box{
+    background: #460b52;
+}
+
+.sub-container{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;   
+}
+
+
+.c-form{
+    margin-top: 25px;
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    
+   
+}
+.mat-form-field ,
+.mat-label,
+.input,
+::placeholder{
+
+  color: #fff !important;
+}
+
+.c-width{
+    width:100%;
+}
+td{
+    padding-right: 8px;
+}
+
+.mat-flat-button{
+    background-color: #fff;
+    color: #460b52;
+}
+.btn{
+    margin-left: 50px;
+}
+.btn1{
+    margin-left: 50px;
+}
+
+

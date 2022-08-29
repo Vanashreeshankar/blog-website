@@ -1,0 +1,55 @@
+.container{
+    margin-top: 25px ;
+}
+.search{
+   width: 100px;
+   padding: 20px;
+   background: #ffff;
+   margin: 25px auto;
+   border-radius: 5px #460b52;
+   height: 50px;
+   
+}
+.search, 
+input[type=search] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 80px;
+    box-sizing: border-box;
+    font-size: 125%;
+    font-weight: 400;
+  }
+
+.box{
+    background: #fff;
+    margin: 30px 100px 30px 100px;
+    height: 250px;
+    box-shadow: 10px 10px #cac7cafa; 
+    
+}
+.mat-card-title{
+    height: 30px;
+    background-color:#460b52;
+    padding: 10px;
+    color: #fff;
+    font-size: 300%;
+    font-weight: 400;
+}
+.mat-card-content{
+    height: 125px;
+    
+    color: black;
+    font-size: 125%;
+    font-weight: 400;
+}
+.mat-card-footer {
+    height: 30px;
+    margin: 2px;
+    padding: 10px;
+    background-color: #460b52;
+    color: #fff;
+    font-size: 150%;
+    font-weight: 400;
+}
+
+
